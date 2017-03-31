@@ -11,7 +11,7 @@
   </head>
   <body class="template">
     <div class="template-wrap clear">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" style="width: 100wh; height: 100vh; position:absolute; top: 0px; left:0px; cursor: none;"></canvas>
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" style="height: 100vh; position:absolute; top: 0px; left:0px; cursor: none;"></canvas>
       <br>
       <div class="logo"></div>
       <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" id="full" style="display:none;" /></div>
@@ -23,8 +23,6 @@ window.addEventListener('resize', function(event){
 document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none;')
 });
 window.onload = document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none;'); 
-      setTimeout(check, 1000);
-      document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none;'); 
 </script>
     <script type='text/javascript'>
   var Module = {
