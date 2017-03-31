@@ -18,7 +18,9 @@
     </div>
     <script>
 window.addEventListener('resize', function(event){
-document.getElementById('canvas').setAttribute('style','width: 100wh; height: 100vh; position:absolute; top: 0px; left:0px;')
+  var width = window.innerWidth;
+      var height = window.innerHeight;
+document.getElementById('canvas').setAttribute('style','width: " + width + "px; height: " + height + "px; position:absolute; top: 0px; left:0px;')
 });
 </script>
     <script type='text/javascript'>
