@@ -13,8 +13,11 @@
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
       <br>
       <div class="logo"></div>
-      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" id="full" /></div>
       <div class="title">Roll Ball</div>
+      <script>
+        document.getElementById("full").click()
+      </script>
     </div>
     <script type='text/javascript'>
   var Module = {
