@@ -17,6 +17,7 @@
       <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" id="full" style="display:none;" /></div>
     </div>
     <script>
+      document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none;')
 window.addEventListener('resize', function(event){
   var width = window.innerWidth;
       var height = window.innerHeight;
