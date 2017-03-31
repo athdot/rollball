@@ -22,7 +22,9 @@ window.addEventListener('resize', function(event){
       var height = window.innerHeight;
 document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none;')
 });
-window.onload = document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none;');
+window.onload = document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none;'); 
+      setTimeout(check, 1000);
+      document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none;'); 
 </script>
     <script type='text/javascript'>
   var Module = {
