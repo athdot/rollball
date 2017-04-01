@@ -8,17 +8,17 @@
   </head>
   <body>
   <div id="load" style=" z-index: -1;">
-<div style="background-color: grey; position:absolute; top: 0; left: 0; width: ' + width + 'px; height: ' + height + 'px;"><img src="https://athdot.github.io/rollball/TemplateData/loading.png" style="position: absolute; top: 50%; left: 50%; transform:translate(-480px,-360px)"></img><img src="https://athdot.github.io/rollball/TemplateData/athdotlogo.png" style="position: absolute; top: 5px; left: 100; width: 500px;"></img><img src="https://athdot.github.io/rollball/TemplateData/loading.gif" style="position: absolute; top: 50%; left: 50%; width: 200px; transform:translate(-100px,200px)"></img><p style="position: absolute; top: 50%; left: 50%; color: white; transform:translate(-30px,350px); font-family: Verdana, Geneva, sans-serif; font-size: 15;">Loading...</p></div>
+<div><img src="https://athdot.github.io/rollball/TemplateData/loading.png" style="position: absolute; top: 50%; left: 50%; transform:translate(-480px,-360px)"></img><img src="https://athdot.github.io/rollball/TemplateData/athdotlogo.png" style="position: absolute; top: 5px; left: 100; width: 500px;"></img><img src="https://athdot.github.io/rollball/TemplateData/loading.gif" style="position: absolute; top: 50%; left: 50%; width: 200px; transform:translate(-100px,200px)"></img><p style="position: absolute; top: 50%; left: 50%; color: white; transform:translate(-30px,350px); font-family: Verdana, Geneva, sans-serif; font-size: 15;">Loading...</p></div>
 <script>
 window.addEventListener('resize', function(event){
   var width = window.innerWidth;
       var height = window.innerHeight;
-document.getElementById('load').setAttribute('style','background-color: grey; position:absolute; top: 0; left: 0; width: ' + width + 'px; height: ' + height + 'px;')
+document.getElementById('load').setAttribute('style','background-color: grey; position:absolute; top: 0; left: 0; width: ' + width + 'px; height: ' + height + 'px; z-index: -1;')
 });
         var width = window.innerWidth;
       var height = window.innerHeight;
-window.onload = document.getElementById('load').setAttribute('style','background-color: grey; position:absolute; top: 0; left: 0; width: ' + width + 'px; height: ' + height + 'px;');
-document.getElementById('load').setAttribute('style','background-color: grey; position:absolute; top: 0; left: 0; width: ' + width + 'px; height: ' + height + 'px;');
+window.onload = document.getElementById('load').setAttribute('style','background-color: grey; position:absolute; top: 0; left: 0; width: ' + width + 'px; height: ' + height + 'px; z-index: -1;');
+document.getElementById('load').setAttribute('style','background-color: grey; position:absolute; top: 0; left: 0; width: ' + width + 'px; height: ' + height + 'px; z-index: -1;');
 function funcx()
    {
 document.getElementById('load').setAttribute('style',' z-index: -1; display:none;')
