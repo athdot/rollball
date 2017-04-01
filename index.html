@@ -12,11 +12,21 @@
 <script>
 function funcx()
    {
-document.getElementById('load').setAttribute('style',' z-index: -1; display:none;')
+document.getElementById('load').setAttribute('style','display:none;')
+     document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none;');
    }
 setTimeout(funcx, 10000);
+  window.addEventListener('resize', function(event){
+  var width = window.innerWidth;
+      var height = window.innerHeight;
+document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none;')
+});
+        var width = window.innerWidth;
+      var height = window.innerHeight;
+window.onload = document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none; display: none;'); 
+  document.getElementById('canvas').setAttribute('style','width: ' + width + 'px; height: ' + height + 'px; position:absolute; top: 0px; left:0px; cursor: none;'); 
 </script>
 </div>
-<object data="https://athdot.github.io/rollball/game.html" style="position:absolute; top: 0px; left: 0px;"></object>
+<object data="https://athdot.github.io/rollball/game.html" style="position:absolute; top: 0px; left: 0px;" id="canvas"></object>
   </body>
 </html>
